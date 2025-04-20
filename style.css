@@ -1,3 +1,4 @@
+/* ===== Body & Background ===== */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -6,9 +7,9 @@ body {
     color: white;
 }
 
+/* ===== Overlay Layer ===== */
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    /* semi-transparent overlay */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/* ===== Main Container ===== */
 .container {
     text-align: center;
     max-width: 800px;
@@ -25,12 +27,14 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
+/* ===== Header Title ===== */
 h1 {
     font-size: 2em;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px black;
 }
 
+/* ===== Card Layout ===== */
 .details {
     display: flex;
     justify-content: space-around;
@@ -39,13 +43,16 @@ h1 {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 100%;
+    position: relative;
+    background-color: rgba(34, 34, 37, 0.7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    flex: 1 1 300px;
     max-width: 350px;
-    backdrop-filter: blur(5px);
-    text-shadow: 1px 1px 2px black;
 }
 
 .card h2 {
@@ -53,13 +60,16 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.4em;
-    }
-
-    .details {
-        flex-direction: column;
-        align-items: center;
-    }
+/* ===== Sticker Image ===== */
+.invitation-card {
+    padding-top: 2.5rem;
+    /* Room for sticker */
 }
+
+.sticker {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 50px;
+    height: auto;
+    z-index:
