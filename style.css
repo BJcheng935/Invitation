@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('Images/Background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent overlay */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(5px);
+    text-shadow: 1px 1px 2px black;
+}
+
+.card h2 {
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
